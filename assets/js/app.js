@@ -18,7 +18,7 @@ slideElement.oninput = function() {
 function generatePassword(size) {
     let n = charset.length;
     let pass = "";
-    for(let i = 0; i < size; ++i) { // Corrigido para usar o argumento 'size' em vez de 'slideElement.value'
+    for(let i = 0; i < size; ++i) { 
         pass += charset.charAt(Math.floor(Math.random() * n));
     }
 
