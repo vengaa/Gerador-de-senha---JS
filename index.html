@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generate - JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <img src="assets/img/logo.png" class="logo">
+
+    <main class="container-input">
+        <span>Tamanho: <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="9" max="25" value="9">
+
+        <button id="button" class="button-cta" onclick="generatePassword(slideElement.value)">Gerar senha</button>
+    </main>
+
+    <div id="container-password" class="container-password hide" onclick="copy()">
+        <span class="title">A senha gerada é: </span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Clique na senha para copiar! ☝</span>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
